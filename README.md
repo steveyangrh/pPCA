@@ -1,1 +1,1 @@
-# pPCA
+# pPCA - probabilistic Principal Component Analysis
