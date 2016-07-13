@@ -11,7 +11,9 @@ C_Aad = cov(A_ad);
 [V_Aad,D_Aad] = eig(C_Aad);
 
 
-%[V_Bad,D_Bad] = eig(B*B')
+[V_Bad,D_Bad] = eig(B*B');
+
+
 
 
 
