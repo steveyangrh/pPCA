@@ -11,7 +11,7 @@ function [W] = ppca_yang(R0,k)
 	W = rand(n,k);
 	% initialize W with a random matrix
 
-	u = rand; sigma = rand;
+	u = rand; sigma = rand; % u and sigma maight be matrices
 	% initialize u(mean), and sigma(standard deviation)
 
 	minImprovement = 0.0001;
