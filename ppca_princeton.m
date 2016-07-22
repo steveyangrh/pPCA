@@ -1,23 +1,19 @@
 function [var, U, lambda] = ppca_princeton(x, ppca_dim)
-<<<<<<< HEAD
-% PPCA	Probabilistic Principal Components Analysis
-=======
-%PPCA	Probabilistic Principal Components Analysis
->>>>>>> 0fe929c968b0b25a6691128a6908c9d65230697e
+%PPCA Probabilistic Principal Components Analysis
 %
-%	Description
-%	 [VAR, U, LAMBDA] = PPCA(X, PPCA_DIM) computes the principal
-%	component subspace U of dimension PPCA_DIM using a centred covariance
-%	matrix X. The variable VAR contains the off-subspace variance (which
-%	is assumed to be spherical), while the vector LAMBDA contains the
-%	variances of each of the principal components.  This is computed
-%	using the eigenvalue and eigenvector  decomposition of X.
+% Description
+%  [VAR, U, LAMBDA] = PPCA(X, PPCA_DIM) computes the principal
+% component subspace U of dimension PPCA_DIM using a centred covariance
+% matrix X. The variable VAR contains the off-subspace variance (which
+% is assumed to be spherical), while the vector LAMBDA contains the
+% variances of each of the principal components.  This is computed
+% using the eigenvalue and eigenvector  decomposition of X.
 %
-%	See also
-%	EIGDEC, PCA
+% See also
+% EIGDEC, PCA
 %
 
-%	Copyright (c) Ian T Nabney (1996-2001)
+% Copyright (c) Ian T Nabney (1996-2001)
 
 
 if ppca_dim ~= round(ppca_dim) | ppca_dim < 1 | ppca_dim > size(x, 2)
@@ -49,13 +45,7 @@ if q_temp == 0
   lambda = var*ones(1, ppca_dim);
 else
   var = mean(l(q_temp+1:end));
-<<<<<<< HEAD
 end  
 U = Utemp(:, 1:q_temp);
 lambda(1:q_temp) = l(1:q_temp);
 
-=======
-end
-U = Utemp(:, 1:q_temp);
-lambda(1:q_temp) = l(1:q_temp);
->>>>>>> 0fe929c968b0b25a6691128a6908c9d65230697e
