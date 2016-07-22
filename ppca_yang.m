@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 %% ppca_yang: probabilistic PCA for player modeling
 % R0 is the input matrix which contains missing values
 % k is the number of basis
@@ -32,5 +33,17 @@ function [W] = ppca_yang(R0,k)
 
 
 	end
+=======
+function [] = ppca_yang (R0,k)
+% probabilistic PCA for dimensionality reduction
+% created on July 21, 2016
+% Ronghao Yang
+
+% R0 is the input matrix which contains missing values
+% k specifies the number of basis
+
+
+
+>>>>>>> 0fe929c968b0b25a6691128a6908c9d65230697e
 
 end

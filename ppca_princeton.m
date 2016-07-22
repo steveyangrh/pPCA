@@ -1,5 +1,9 @@
 function [var, U, lambda] = ppca_princeton(x, ppca_dim)
+<<<<<<< HEAD
 % PPCA	Probabilistic Principal Components Analysis
+=======
+%PPCA	Probabilistic Principal Components Analysis
+>>>>>>> 0fe929c968b0b25a6691128a6908c9d65230697e
 %
 %	Description
 %	 [VAR, U, LAMBDA] = PPCA(X, PPCA_DIM) computes the principal
@@ -45,7 +49,13 @@ if q_temp == 0
   lambda = var*ones(1, ppca_dim);
 else
   var = mean(l(q_temp+1:end));
+<<<<<<< HEAD
 end  
 U = Utemp(:, 1:q_temp);
 lambda(1:q_temp) = l(1:q_temp);
 
+=======
+end
+U = Utemp(:, 1:q_temp);
+lambda(1:q_temp) = l(1:q_temp);
+>>>>>>> 0fe929c968b0b25a6691128a6908c9d65230697e
