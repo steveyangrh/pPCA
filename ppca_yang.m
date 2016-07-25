@@ -17,17 +17,20 @@ function [W] = ppca_yang(R0,k)
 	minImprovement = 0.0001;
 	rmse = 10^40;
 	prevErr = Inf;
+  % specify the stop condition
 
 	while(rmse < (1-minImprovement)*prevErr)
-	% the iterative step for minimizing the error
+  % the iterative step for minimizing the error
 
-	% Expectation step (E)
+  	% Expectation step (E)
 
 
-	% The minimization step (M)
+  	% The minimization step (M)
 
 
     % Compute the error
+    prevErr = rmse;
+    rmse = sqrt(mean(mean((R-W*H).^2)));
 
 	end
 
