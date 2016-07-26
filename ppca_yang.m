@@ -2,11 +2,16 @@
 % R0 is the input matrix which contains missing values
 % k is the number of basis
 
+% E-M algorithm is employed here 
+
 % Created on July 21, 2016
 % Ronghao Yang
-function [W] = ppca_yang(R0,k)
+function [W,X] = ppca_yang(R0,k)
 
 	[n,m] = size(R0);
+
+	indexNotNan = find(~isnan(R0));
+	% indexNotNan has the indices of all non-nan values
 
 	W = rand(n,k);
 	% initialize W with a random matrix
@@ -17,20 +22,20 @@ function [W] = ppca_yang(R0,k)
 	minImprovement = 0.0001;
 	rmse = 10^40;
 	prevErr = Inf;
-  % specify the stop condition
+  	% specify the stop condition
 
 	while(rmse < (1-minImprovement)*prevErr)
-  % the iterative step for minimizing the error
+  	% the iterative step for minimizing the error
 
-  	% Expectation step (E)
+	  	% Expectation step (E)
+	  	X = inv(W'* W)*W'*R0;
 
+	  	% The minimization step (M)
+	  	W = R0*X'*inv(X*X');
 
-  	% The minimization step (M)
-
-
-    % Compute the error
-    prevErr = rmse;
-    rmse = sqrt(mean(mean((R-W*H).^2)));
+	    % Compute the error
+	    prevErr = rmse;
+	    %rmse = sqrt(mean(mean((R-W*H).^2)));
 
 	end
 
