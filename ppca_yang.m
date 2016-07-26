@@ -16,9 +16,6 @@ function [W,X] = ppca_yang(R0,k)
 	W = rand(n,k);
 	% initialize W with a random matrix
 
-	u = rand; sigma = rand; % u and sigma maight be matrices
-	% initialize u(mean), and sigma(standard deviation)
-
 	minImprovement = 0.0001;
 	rmse = 10^40;
 	prevErr = Inf;
@@ -28,6 +25,7 @@ function [W,X] = ppca_yang(R0,k)
   	% the iterative step for minimizing the error
 
 	  	% Expectation step (E)
+	  	% generally, with missing values, minimize ||Wx*-y*||
 	  	X = inv(W'* W)*W'*R0;
 
 	  	% The minimization step (M)

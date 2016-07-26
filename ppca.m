@@ -35,9 +35,9 @@ function [pc,W,data_mean,xr,evals,percentVar]=ppca(data,k)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-if nargin==1
-  k=2
-end
+  if nargin==1
+    k=2
+  end
 
 
   [C,ss,M,X,Ye]=ppca_mv(data',k,0,0);
@@ -83,7 +83,7 @@ function [C, ss, M, X,Ye] = ppca_mv(Ye,d,dia,plo);
 %
 % [C, ss, M, X, Ye ] = ppca_mv(Y,d,dia,plo);
 %
-% Y   (N by D)  N data vectors
+% Ye  (N by D)  N data vectors
 % d   (scalar)  dimension of latent space
 % dia (binary)  if 1: printf objective each step
 % plo (binary)  if 1: plot first PCA direction each step.
@@ -98,6 +98,8 @@ function [C, ss, M, X,Ye] = ppca_mv(Ye,d,dia,plo);
 % J.J. Verbeek, 2002. http://www.science.uva.nl/~jverbeek
 %
 
+% [C,ss,M,X,Ye]=ppca_mv(data',k,0,0);
+
 %threshold = 1e-3;     % minimal relative change in objective funciton to continue
 threshold = 1e-5;
 
@@ -105,23 +107,23 @@ if plo; set(gcf,'Double','on'); end
 
 [N,D] = size(Ye);
 
-Obs   = ~isnan(Ye);
-hidden = find(~Obs);
-missing = length(hidden);
+Obs   = ~isnan(Ye); % 1 is non-nan value, 0 is nan
+hidden = find(~Obs); % hidden consists the indices of missing values
+missing = length(hidden); % missing is the number of missing values
 
 % compute data mean and center data
-if missing
-  for i=1:D;  M(i) = mean(Ye(find(Obs(:,i)),i)); end;
+if missing % if missing > 0, report true
+  for i=1:D;  M(i) = mean(Ye(find(Obs(:,i)),i)); end; % calculate the mean of existing values
 else
     M = mean(Ye);
 end
-Ye = Ye - repmat(M,N,1);
+Ye = Ye - repmat(M,N,1); % subtract the mean from orginal values
 
-if missing;   Ye(hidden)=0;end
+if missing;   Ye(hidden)=0;end % replace missing values by 0
 
 r     = randperm(N);
 C     = Ye(r(1:d),:)';     % =======     Initialization    ======
-C     = randn(size(C));
+C     = randn(size(C)); % initialize C
 CtC   = C'*C;
 X     = Ye * C * inv(CtC);
 recon = X*C'; recon(hidden) = 0;
@@ -133,7 +135,7 @@ old   = Inf;
 
 while count          %  ============ EM iterations  ==========
 
-    if plo; plot_it(Ye,C,ss,plo);    end
+    if plo; plot_it(Ye,C,ss,plo);    end % plot ignore here
 
     Sx = inv( eye(d) + CtC/ss );    % ====== E-step, (co)variances   =====
     ss_old = ss;
@@ -145,13 +147,21 @@ while count          %  ============ EM iterations  ==========
     CtC    = C'*C;
     ss     = ( sum(sum( (C*X'-Ye').^2 )) + N*sum(sum(CtC.*Sx)) + missing*ss_old ) /(N*D);
 
+    % ===============================================
+    % calculate the stop condition
     objective = N*(D*log(ss) +trace(Sx)-log(det(Sx)) ) +trace(SumXtX) -missing*log(ss_old);
     rel_ch    = abs( 1 - objective / old );
     old       = objective;
+    % ===============================================
 
+    
+    % ===============================================
+    % determine if stop
     count = count + 1;
     if ( rel_ch < threshold) & (count > 5); count = 0;end
     if dia; fprintf('Objective: M %s    relative change: %s \n',objective, rel_ch ); end
+    % ===============================================
+
 
 end             %  ============ EM iterations  ==========
 
