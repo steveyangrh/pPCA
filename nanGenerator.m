@@ -12,7 +12,7 @@ function R0New=nanGenerator(R0,ratio)
 		R0New = R0;
 	    numNaN = ceil(numel(R0)*(ratio/100));
 	    R0New(randperm(numel(R0),numNaN)) = NaN;
-	    safe = checkNan(R0New)
+	    safe = checkNan(R0New);
 	end
 
 end
