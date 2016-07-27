@@ -92,7 +92,7 @@ function [C, ss, M, X,Ye] = ppca_mv(Ye,d,dia,plo);
 % ss  (scalar)  isotropic variance outside subspace
 % C   (D by d)  C*C' +I*ss is covariance model, C has scaled principal directions as cols.
 % M   (D by 1)  data mean
-% X   (N by d)  expected states
+% X   (N by d)  expected states //hidden variable
 % Ye  (N by D)  expected complete observations (interesting if some data is missing)
 %
 % J.J. Verbeek, 2002. http://www.science.uva.nl/~jverbeek
@@ -123,7 +123,7 @@ if missing;   Ye(hidden)=0;end % replace missing values by 0
 
 r     = randperm(N);
 C     = Ye(r(1:d),:)';     % =======     Initialization    ======
-C     = randn(size(C)); % initialize C
+C     = randn(size(C)); % initialize C (W' in our computation)
 CtC   = C'*C;
 X     = Ye * C * inv(CtC);
 recon = X*C'; recon(hidden) = 0;

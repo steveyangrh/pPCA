@@ -26,10 +26,11 @@ function [W,X] = ppca_yang(R0,k)
 
 	  	% Expectation step (E)
 	  	% generally, with missing values, minimize ||Wx*-y*||
-	  	X = inv(W'* W)*W'*R0;
+	  	%X = inv(W'* W)*W'*R0;
+	  	beta = W'*(W*W'+sigmaY^2.*eye());
 
 	  	% The minimization step (M)
-	  	W = R0*X'*inv(X*X');
+	  	%W = R0*X'*inv(X*X');
 
 	    % Compute the error
 	    prevErr = rmse;
