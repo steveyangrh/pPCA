@@ -8,7 +8,7 @@
 function R0New=nanGenerator(R0,ratio)
 
 	safe = 0;
-	if(~safe)
+	while(~safe)
 		R0New = R0;
 	    numNaN = ceil(numel(R0)*(ratio/100));
 	    R0New(randperm(numel(R0),numNaN)) = NaN;

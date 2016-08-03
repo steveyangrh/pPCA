@@ -11,13 +11,13 @@ function [W,u,sigma_square,R] = ppca_yang(R0,k)
 	[n,m] = size(R0);
     R = R0;
     
-	indexNotNan = find(~isnan(R0));
+	% indexNotNan = find(~isnan(R0));
 	% indexNotNan has the indices of all non-nan values
 
 	W = rand(n,k);
 	% initialize W with a random matrix
     
-    u = rand(n,1);
+    u = rand(n,1); % suspecious
     % initialize u with a random vector, u is mean
     
     sigma_square = rand;
@@ -56,7 +56,7 @@ function [W,u,sigma_square,R] = ppca_yang(R0,k)
         
         C = C / m;
         
-        u = sum(R,2);
+        u = sum(R,2)/m;
         
         [U,D] = eigs(C,k);
         
