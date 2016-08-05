@@ -10,7 +10,7 @@ function [pc,W,data_mean,xr,evals,percentVar]=ppca(data,k)
 % pc = ppca(data)
 % [pc,W,data_mean,xr,evals,percentVar]=ppca(data,k)
 %
-%  data - inclomplete data set, d x n - matrix
+%  data -  inclomplete data set, d x n - matrix
 %          rows:    d variables (genes or metabolites)
 %          columns: n samples
 %
@@ -154,7 +154,7 @@ while count          %  ============ EM iterations  ==========
     old       = objective;
     % ===============================================
 
-    
+
     % ===============================================
     % determine if stop
     count = count + 1;
