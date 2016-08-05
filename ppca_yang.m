@@ -4,7 +4,7 @@
 
 % E-M algorithm is employed here 
 
-% Created on July 21, 2016
+% Created on August 2, 2016
 % Ronghao Yang
 function [W,u,sigma_square,R] = ppca_yang(R0,k)
 
@@ -17,14 +17,14 @@ function [W,u,sigma_square,R] = ppca_yang(R0,k)
 	W = rand(n,k);
 	% initialize W with a random matrix
     
-    u = rand(n,1); % suspecious
-    % initialize u with a random vector, u is mean
+    u = nanmean(R0,2); % suspecious, does this number have to be rand?
+    % initialize u
     
     sigma_square = rand;
     % sigma is standard deviation
     
 
-	minImprovement = 0.0001;
+	minImprovement = 0.00001;
 	rmse = 10^40;
 	prevErr = Inf;
   	% specify the stop condition
@@ -36,14 +36,14 @@ function [W,u,sigma_square,R] = ppca_yang(R0,k)
         SIG = W*W' + sigma_square.*eye(n);
         for i=1:m
             r = R0(:,i);
-            rNoNan = find(~isnan(r));
             rNan = find(isnan(r));
+            rNoNan = find(~isnan(r));
             r0 = r(rNoNan);
             u0 = u(rNoNan);
             uh = u(rNan);
             SIG_OO = SIG (rNoNan,rNoNan);
             SIG_HO = SIG (rNan,rNoNan);
-            r(rNan) = uh + SIG_HO*inv(SIG_OO)*(r0-u0);
+            r(rNan) = uh + SIG_HO*SIG_OO^(-1)*(r0-u0);
             R(:,i) = r;
         end
         
@@ -56,15 +56,18 @@ function [W,u,sigma_square,R] = ppca_yang(R0,k)
         
         C = C / m;
         
-        u = sum(R,2)/m;
+        u = nanmean(R,2);
+        % update mean value
         
         [U,D] = eigs(C,k);
         
         sigma_square = (trace(C)-trace(D))/(n-k);
+        % updating sigma_square
         
         S = D- sigma_square;
         
         W = U*S;
+        % updating W
 
 	    % Compute the error
 	    prevErr = rmse;
