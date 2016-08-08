@@ -1,19 +1,17 @@
-% clear;
-% close all;
-% clc;
-% 
-% A = [2.5 2.4;0.5 0.7;2.2 2.9;1.9 2.2;3.1 3.0;2.3 2.7;2 1.6;1 1.1;1.5 1.6;1.1 0.9];
-% A_ad = [A(:,1)-mean(A(:,1)) A(:,2)-mean(A(:,2))];
-% 
-% B = A_ad';
-% 
-% C_Aad = cov(A_ad);
-% [V_Aad,D_Aad] = eig(C_Aad);
-% 
-% 
-% [V_Bad,D_Bad] = eig(B*B');
+clear
+clc
+close all
 
+r = [1;2;3;nan;nan;6;nan;8];
+Ye = repmat(r,1,5);
+rNan = find(isnan(r));
+rNoNan = find(~isnan(r));
+r0 = r(rNoNan);
 
+Obs   = ~isnan(Ye); % 1 is non-nan value, 0 is nan
+hidden = find(~Obs); % hidden consists the indices of missing values
 
-
-
+for i=1:5;  
+    M(i) = mean(Ye(~hidden(:,i),i)); 
+end;
+r

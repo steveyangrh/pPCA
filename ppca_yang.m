@@ -24,7 +24,7 @@ function [W,u,sigma_square,R] = ppca_yang(R0,k)
     % sigma is standard deviation
     
 
-	minImprovement = 0.00001;
+	minImprovement = 0.00000000001;
 	rmse = 10^40;
 	prevErr = Inf;
   	% specify the stop condition
@@ -33,7 +33,7 @@ function [W,u,sigma_square,R] = ppca_yang(R0,k)
   	% the iterative step for minimizing the error
 
 	  	% Expectation step (E)
-        SIG = W*W' + sigma_square.*eye(n);
+        SIG = W * W' + sigma_square.*eye(n); % covariance matrix for vector r
         for i=1:m
             r = R0(:,i);
             rNan = find(isnan(r));

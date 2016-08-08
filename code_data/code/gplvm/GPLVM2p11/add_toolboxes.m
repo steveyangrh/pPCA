@@ -1,0 +1,11 @@
+function add_toolboxes()
+
+addpath('../toolboxes/DATASETS0p135')
+addpath('../toolboxes/IVM0p4')
+addpath('../toolboxes/KERN0p221')
+addpath('../toolboxes/MLTOOLS0p131')
+addpath('../toolboxes/NDLUTIL0p16')
+addpath('../toolboxes/NETLAB3_3')
+addpath('../toolboxes/NOISE0p14')
+addpath('../toolboxes/OPTIMI0p132')
+addpath('../toolboxes/PRIOR0p22')

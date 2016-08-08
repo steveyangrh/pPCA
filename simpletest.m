@@ -2,30 +2,15 @@ clear
 clc
 close all
 
-for k = 6:1:9
-R = rand(20,k)*rand(k,20);
-R0 = nanGenerator(R,0);
-subplot(2,2,k-5);
-    for i = 1:10
-        for j = 1:1:5
-             [pc,W,data_mean,xr,evals,percentVar]=ppca(R0,i);
- 
-             %newR = (pinv(W)*pc)+repmat(data_mean,1,size(R0,2));
-        
-            %[coeff,score,pcvar,mu,v,S] = ppca(R0,i);
-            
-            %newR = score*coeff' + repmat(mu,20,1);
-                
-            rmse = computeRMSE(xr,R);
+addpath('./ppca_mv');
+addpath('../mat');
+load('R.mat');
 
-            scatter(i,rmse);
-            hold on;
-        end
-        hold on;
-    end
-hold off;
-    %fprintf('%d\n',k);
-end
+R0 = rand(20,7)*rand(7,20);
+R0_missing = nanGenerator(R0,0);
+r0 = R0(:,1);
+r0_missing = nanGenerator(r0,70);
+[pc,W,data_mean]=ppca(R0_missing,7);
 
-
+data_recon = (pinv(W)*pc)+repmat(data_mean,1,size(R0,2));
 

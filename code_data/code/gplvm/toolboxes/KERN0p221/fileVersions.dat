@@ -1,0 +1,511 @@
+File Version listing for kern 0.221
+rbfKernGradX.cpp  CVS version 1.1
+ggKernCompute.m  SVN version 1
+kernSetIndex.m  CVS version 1.1 SVN version 1
+simwhiteXsimwhiteKernCompute.m  SVN version 198
+ardKernExpandParam.m  CVS version 1.3 SVN version 1
+simwhiteXrbfinfwhiteKernCompute.m  SVN version 307
+gaussianKernExtractParam.m  SVN version 200
+whitefixedKernParamInit.m  CVS version 1.5 SVN version 151
+kernPca.m  CVS version 1.1 SVN version 1
+linKernGradient.m  CVS version 1.5 SVN version 1
+ratquadKernParamInit.m  CVS version 1.2 SVN version 1
+rbfperiodicKernExpandParam.m  CVS version 1.1 SVN version 1
+kernExtractParam.m  CVS version 1.6 SVN version 316
+gibbsKernSetLengthScaleFunc.m  CVS version 1.1 SVN version 1
+tensorKernGradX.m  CVS version 1.3 SVN version 1
+ouKernGradient.m  SVN version 195
+kernelCenter.m  SVN version 105
+polyardKernGradX.m  CVS version 1.3 SVN version 1
+rbfperiodicKernGradient.m  CVS version 1.1 SVN version 1
+ratquadKernExtractParam.m  CVS version 1.1 SVN version 1
+gibbsKernCompute.m  CVS version 1.1 SVN version 1
+fileKernRead.m  CVS version 1.2 SVN version 1
+biasKernDiagGradient.m  CVS version 1.2 SVN version 1
+ggwhiteKernExpandParam.m  SVN version 285
+disimXdisimKernCompute.m  CVS version 1.1 SVN version 163
+gaussianwhiteKernGradient.m  SVN version 285
+matern52KernDiagCompute.m  CVS version 1.1 SVN version 1
+whiteXwhiteKernGradX.m  SVN version 326
+polyKernExpandParam.m  CVS version 1.2 SVN version 1
+lfmwhiteKernGradient.m  SVN version 198
+lfmKernGradient.m  SVN version 20
+whiteXnoneKernGradient.m  SVN version 285
+gibbsperiodicKernDisplay.m  CVS version 1.2 SVN version 1
+multiKernGradient.m  CVS version 1.4 SVN version 283
+lfmXlfmKernCompute.m  SVN version 87
+mlpardKernExtractParam.m  CVS version 1.5 SVN version 1
+mlpKernExpandParam.m  CVS version 1.4 SVN version 1
+lfmOptions.m  SVN version 20
+ggwhiteKernParamInit.m  SVN version 316
+rbfKernDiagGradient.m  CVS version 1.2 SVN version 1
+wofzPoppe.f  SVN version 300
+ggwhiteXggwhiteKernGradient.m  SVN version 285
+ardKernDiagGradient.m  CVS version 1.1 SVN version 1
+tensorKernDiagGradient.m  CVS version 1.1 SVN version 1
+rbfardKernGradX.m  CVS version 1.6 SVN version 1
+wienerKernParamInit.m  SVN version 265
+simKernDiagGradX.m  CVS version 1.1 SVN version 1
+gibbsperiodicKernCompute.m  CVS version 1.1 SVN version 1
+polyardKernParamInit.m  CVS version 1.3 SVN version 1
+ouKernDiagCompute.m  SVN version 195
+lfmKernDiagGradient.m  SVN version 20
+rbfinfwhiteKernExtractParam.m  SVN version 307
+rbfwhiteKernDisplay.m  SVN version 274
+simwhiteXwhiteKernCompute.m  SVN version 285
+translateKernGradient.m  CVS version 1.1 SVN version 1
+rbfperiodicKernGradX.m  CVS version 1.2 SVN version 1
+rbfinfwhiteKernParamInit.m  SVN version 307
+ggwhiteKernCompute.m  SVN version 285
+lfmExtractParam.m  SVN version 20
+rbfXnoneKernCompute.m  SVN version 285
+noneKernCompute.m  SVN version 151
+noneKernDisplay.m  SVN version 151
+gaussianKernGradX.m  SVN version 200
+rbfinfwhiteXrbfinfwhiteKernGradient.m  SVN version 307
+gaussianKernParamInit.m  SVN version 280
+ouKernExpandParam.m  SVN version 195
+lfmKernExpandParam.m  SVN version 194
+biasKernDisplay.m  CVS version 1.5 SVN version 1
+ardKernExtractParam.m  CVS version 1.4 SVN version 1
+kernCompute.m  CVS version 1.5 SVN version 1
+simwhiteKernExpandParam.m  SVN version 198
+whiteKernDiagCompute.m  CVS version 1.4 SVN version 1
+rbfKernExtractParam.m  CVS version 1.7 SVN version 316
+sqexpKernExpandParam.m  CVS version 1.3 SVN version 1
+gibbsperiodicKernExtractParam.m  CVS version 1.1 SVN version 1
+disimXrbfKernCompute.m  CVS version 1.1 SVN version 253
+lfmComputeH4.m  SVN version 285
+disimKernDiagGradient.m  CVS version 1.1 SVN version 1
+noneKernExpandParam.m  SVN version 151
+rbfinfwhiteXwhiteKernCompute.m  SVN version 307
+kernCreate.m  CVS version 1.9 SVN version 263
+whitefixedKernDiagCompute.m  CVS version 1.5 SVN version 1
+simwhiteKernDisplay.m  SVN version 275
+whiteKernDiagGradX.m  CVS version 1.4 SVN version 1
+sparseKernDisplay.m  SVN version 20
+gibbsKernExtractParam.m  CVS version 1.2 SVN version 1
+wienerKernCompute.m  SVN version 286
+ggwhiteKernGradient.m  SVN version 285
+fileKernGradient.m  CVS version 1.2 SVN version 1
+expKernParamInit.m  CVS version 1.1 SVN version 1
+expKernGradient.m  CVS version 1.1 SVN version 1
+ggXggKernCompute.m  SVN version 1
+rbfwhiteXwhiteKernCompute.m  SVN version 285
+matern32KernDiagCompute.m  CVS version 1.1 SVN version 1
+cmpndKernDiagCompute.m  CVS version 1.6 SVN version 1
+biasKernParamInit.m  CVS version 1.5 SVN version 1
+gibbsperiodicKernDiagCompute.m  CVS version 1.1 SVN version 1
+cmpndKernExtractParam.m  CVS version 1.7 SVN version 151
+simwhiteKernGradient.m  SVN version 198
+simXrbfKernCompute.m  CVS version 1.3 SVN version 316
+lfmwhiteKernGradX.m  SVN version 198
+ggXgaussianKernGradX.m  SVN version 200
+linardKernDisplay.m  CVS version 1.6 SVN version 1
+multiKernDiagGradX.m  CVS version 1.1 SVN version 1
+polyKernDiagGradX.m  CVS version 1.2 SVN version 1
+lfmwhiteXrbfwhiteKernCompute.m  SVN version 300
+simwhiteXrbfinfwhiteKernGradient.m  SVN version 307
+rbfwhiteKernGradX.m  SVN version 274
+whiteXrbfKernGradient.m  SVN version 285
+linardKernParamInit.m  CVS version 1.5 SVN version 1
+multiKernCacheBlock.m  SVN version 165
+kernGetVariance.m  CVS version 1.1 SVN version 1
+multiKernTest.m  CVS version 1.5 SVN version 271
+componentKernWriteParamsToFID.m  SVN version 1
+rbfardKernDisplay.m  CVS version 1.5 SVN version 1
+polyKernCompute.m  CVS version 1.2 SVN version 1
+simKernParamInit.m  CVS version 1.2 SVN version 87
+linKernDiagCompute.m  CVS version 1.4 SVN version 1
+pskernelGradient.m  CVS version 1.2 SVN version 1
+multiKernDiagCompute.m  CVS version 1.2 SVN version 269
+whiteXwhiteKernGradient.m  CVS version 1.2 SVN version 87
+kernPriorGradient.m  CVS version 1.3 SVN version 1
+simComputeTest.m  CVS version 1.3 SVN version 1
+disimKernExtractParam.m  CVS version 1.1 SVN version 163
+disimKernGradX.m  CVS version 1.2 SVN version 1
+linKernDiagGradX.m  CVS version 1.4 SVN version 1
+disimComputeH.m  CVS version 1.1 SVN version 166
+biasKernDiagGradX.m  CVS version 1.4 SVN version 1
+kernGradient.m  CVS version 1.7 SVN version 1
+cmpndKernSetIndex.m  CVS version 1.2 SVN version 1
+ggwhiteXgaussianwhiteKernCompute.m  SVN version 285
+kernTest.m  CVS version 1.11 SVN version 306
+ggXgaussianKernCompute.m  SVN version 20
+simKernDiagGradient.m  CVS version 1.2 SVN version 1
+lfmGradientH31.m  SVN version 100
+mlpKernCompute.m  CVS version 1.4 SVN version 1
+simKernExtractParam.m  CVS version 1.1 SVN version 1
+ggwhiteKernDiagCompute.m  SVN version 285
+multiKernFixBlocks.m  SVN version 165
+sqexpKernCompute.m  CVS version 1.4 SVN version 1
+mlpardKernParamInit.m  CVS version 1.5 SVN version 1
+ratquadKernDisplay.m  CVS version 1.1 SVN version 1
+linKernGradX.m  CVS version 1.5 SVN version 265
+gibbsKernDiagGradX.m  CVS version 1.1 SVN version 1
+mlpardKernExpandParam.m  CVS version 1.4 SVN version 1
+disimXsimKernGradient.m  CVS version 1.1 SVN version 253
+polyKernGradX.m  CVS version 1.3 SVN version 1
+gaussianwhiteKernExpandParam.m  SVN version 285
+lfmwhiteKernExtractParam.m  SVN version 198
+simXsimKernCompute.m  CVS version 1.2 SVN version 1
+sqexpKernExtractParam.m  CVS version 1.4 SVN version 1
+gaussianKernCompute.m  SVN version 1
+ggwhiteXgaussianwhiteKernGradX.m  SVN version 285
+mlpardKernCompute.m  CVS version 1.5 SVN version 1
+mlpKernGradX.m  CVS version 1.6 SVN version 1
+cmpndKernDisplay.m  CVS version 1.6 SVN version 1
+simwhiteKernExtractParam.m  SVN version 198
+gaussianwhiteKernGradX.m  SVN version 285
+lfmGradientH32.m  SVN version 100
+lfmGradientSigmaH4.m  SVN version 100
+linardKernCompute.m  CVS version 1.4 SVN version 1
+expKernDiagGradX.m  CVS version 1.1 SVN version 1
+polyKernDiagCompute.m  CVS version 1.2 SVN version 1
+whitefixedKernExtractParam.m  CVS version 1.6 SVN version 1
+matern32KernGradient.m  CVS version 1.1 SVN version 1
+ggKernParamInit.m  SVN version 316
+disimKernExpandParam.m  CVS version 1.1 SVN version 163
+lfmXrbfKernCompute.m  SVN version 87
+whitefixedKernExpandParam.m  CVS version 1.4 SVN version 1
+kernGradX.m  CVS version 1.6 SVN version 1
+wofz.c  SVN version 128
+matern52KernGradient.m  CVS version 1.1 SVN version 1
+cmpndKernExpandParam.m  CVS version 1.8 SVN version 1
+mlpKernDiagCompute.m  CVS version 1.4 SVN version 1
+lfmwhiteKernDisplay.m  SVN version 272
+multiKernGradientBlock.m  CVS version 1.1 SVN version 262
+tensorKernDiagGradX.m  CVS version 1.2 SVN version 1
+disimComputeHPrime.m  CVS version 1.1 SVN version 253
+rbfperiodicKernDiagCompute.m  CVS version 1.1 SVN version 1
+gaussianKernDiagGradient.m  SVN version 1
+whitefixedKernGradX.m  CVS version 1.4 SVN version 151
+ratquadKernCompute.m  CVS version 1.1 SVN version 1
+ouKernDisplay.m  SVN version 195
+linKernDisplay.m  CVS version 1.5 SVN version 1
+rbfinfwhiteXwhiteKernGradient.m  SVN version 307
+fileKernExpandParam.m  CVS version 1.2 SVN version 1
+rbfardKernDiagGradient.m  CVS version 1.2 SVN version 1
+lfmKernDiagCompute.m  SVN version 171
+rbfwhiteKernDiagGradX.m  SVN version 274
+rbfwhiteXrbfwhiteKernCompute.m  SVN version 274
+linardKernExpandParam.m  CVS version 1.3 SVN version 1
+ggXgaussianKernGradient.m  SVN version 1
+kernPriorLogProb.m  CVS version 1.4 SVN version 1
+linardKernGradX.m  CVS version 1.5 SVN version 1
+lfmComputeH3.m  SVN version 285
+expKernDisplay.m  CVS version 1.1 SVN version 1
+gibbsKernDisplay.m  CVS version 1.3 SVN version 1
+polyKernExtractParam.m  CVS version 1.3 SVN version 1
+rbfKernDiagGradX.m  CVS version 1.6 SVN version 1
+linardKernDiagCompute.m  CVS version 1.4 SVN version 1
+ggKernGradient.m  SVN version 1
+sqexpKernDisplay.m  CVS version 1.5 SVN version 1
+polyardKernExpandParam.m  CVS version 1.2 SVN version 1
+kernReadFromFID.m  CVS version 1.2 SVN version 322
+rbfKernDiagCompute.m  CVS version 1.5 SVN version 1
+componentKernReadParamsFromFID.m  CVS version 1.2 SVN version 322
+lfmGradientUpsilon.m  SVN version 44
+translateKernParamInit.m  CVS version 1.1 SVN version 1
+simwhiteKernParamInit.m  SVN version 198
+lfmwhiteComputeGradThetaH1.m  SVN version 290
+rbfardKernCompute.m  CVS version 1.4 SVN version 1
+gaussianwhiteKernDisplay.m  SVN version 285
+gaussianwhiteKernCompute.m  SVN version 285
+multiKernDisplay.m  CVS version 1.2 SVN version 1
+translateKernCompute.m  CVS version 1.1 SVN version 1
+lfmwhiteKernDiagGradX.m  SVN version 198
+rbfardKernExtractParam.m  CVS version 1.5 SVN version 1
+lfmComputeH.m  SVN version 44
+whitefixedKernCompute.m  CVS version 1.4 SVN version 1
+gibbsperiodicKernExpandParam.m  CVS version 1.1 SVN version 1
+disimKernDiagCompute.m  CVS version 1.1 SVN version 163
+lfmGradientSigmaH3.m  SVN version 100
+linardKernGradient.m  CVS version 1.5 SVN version 1
+wofzHui.f  SVN version 300
+gibbsperiodicKernParamInit.m  CVS version 1.1 SVN version 1
+mlpKernParamInit.m  CVS version 1.5 SVN version 1
+cmpndKernParamInit.m  CVS version 1.10 SVN version 1
+lfmLogLikelihood.m  SVN version 20
+expKernExtractParam.m  CVS version 1.1 SVN version 1
+cmpndKernDiagGradX.m  CVS version 1.4 SVN version 1
+whiteKernExtractParam.m  CVS version 1.4 SVN version 1
+simKernGradient.m  CVS version 1.1 SVN version 1
+lfmComputeUpsilonVector.f  SVN version 285
+ratquadKernDiagGradX.m  CVS version 1.1 SVN version 1
+whiteKernDiagGradient.m  CVS version 1.2 SVN version 1
+noneKernParamInit.m  SVN version 151
+expKernExpandParam.m  CVS version 1.1 SVN version 1
+rbfinfwhiteKernDiagCompute.m  SVN version 307
+wienerKernDiagGradX.m  SVN version 265
+rbfperiodicKernDiagGradient.m  CVS version 1.1 SVN version 1
+lfmwhiteComputeH.m  SVN version 285
+lfmwhiteXwhiteKernCompute.m  SVN version 285
+rbfinfwhiteKernGradient.m  SVN version 307
+disimXsimKernCompute.m  CVS version 1.1 SVN version 253
+rbfardKernDiagGradX.m  CVS version 1.4 SVN version 1
+lfmwhiteXlfmwhiteKernGradient.m  SVN version 306
+sqexpKernGradient.m  CVS version 1.4 SVN version 1
+kernToolboxes.m  CVS version 1.2 SVN version 20
+simwhiteKernCompute.m  SVN version 198
+expKernCompute.m  CVS version 1.1 SVN version 1
+polyardKernDiagCompute.m  CVS version 1.2 SVN version 1
+expKernGradX.m  CVS version 1.1 SVN version 1
+ggKernExpandParam.m  SVN version 1
+gaussianwhiteKernDiagCompute.m  SVN version 285
+ouKernCompute.m  SVN version 195
+linKernExpandParam.m  CVS version 1.4 SVN version 1
+readme.txt  CVS version 1.26 SVN version 326
+disimKernDiagGradX.m  CVS version 1.1 SVN version 1
+noneKernGradX.m  SVN version 151
+ratquadKernDiagCompute.m  CVS version 1.1 SVN version 1
+mlpardKernDisplay.m  CVS version 1.6 SVN version 1
+kernCorrelation.m  CVS version 1.1 SVN version 1
+gibbsperiodicKernDiagGradient.m  CVS version 1.1 SVN version 1
+polyardKernDisplay.m  CVS version 1.4 SVN version 1
+linKernCompute.m  CVS version 1.4 SVN version 1
+rbfperiodicKernParamInit.m  CVS version 1.2 SVN version 1
+lfmwhiteXwhiteKernGradient.m  SVN version 306
+gibbsKernDiagGradient.m  CVS version 1.1 SVN version 1
+translateKernDiagCompute.m  CVS version 1.1 SVN version 1
+biasKernCompute.m  CVS version 1.4 SVN version 1
+multiKernDiagGradient.m  CVS version 1.1 SVN version 1
+multiKernCompute.m  CVS version 1.3 SVN version 269
+rbfKernCompute.m  CVS version 1.7 SVN version 1
+lfmXrbfKernGradient.m  SVN version 87
+matern32KernParamInit.m  CVS version 1.2 SVN version 1
+wienerKernDiagCompute.m  SVN version 265
+simwhiteXrbfwhiteKernGradient.m  SVN version 306
+ardKernParamInit.m  CVS version 1.6 SVN version 1
+lfmwhiteKernDiagCompute.m  SVN version 272
+matern32KernDisplay.m  CVS version 1.1 SVN version 1
+rbfKernParamInit.m  CVS version 1.6 SVN version 316
+matern52KernParamInit.m  CVS version 1.2 SVN version 1
+ggwhiteKernDisplay.m  SVN version 285
+polyardKernGradient.m  CVS version 1.3 SVN version 1
+simwhiteKernDiagCompute.m  SVN version 198
+lfmKernParamInit.m  SVN version 194
+rbfinfwhiteKernDisplay.m  SVN version 307
+kernDisplay.m  CVS version 1.7 SVN version 1
+fileKernParamInit.m  CVS version 1.3 SVN version 1
+disimKernCompute.m  CVS version 1.1 SVN version 163
+lfmGradientH41.m  SVN version 100
+lfmGradientSigmaH.m  SVN version 285
+gaussianwhiteKernDiagGradient.m  SVN version 285
+rbfinfwhiteKernDiagGradX.m  SVN version 307
+tensorKernSlash.m  CVS version 1.2 SVN version 1
+kernDiagCompute.m  CVS version 1.6 SVN version 1
+cmpndKernGradient.m  CVS version 1.8 SVN version 1
+ratquadKernExpandParam.m  CVS version 1.1 SVN version 1
+matern32KernDiagGradient.m  CVS version 1.1 SVN version 1
+translateKernExpandParam.m  CVS version 1.1 SVN version 1
+tensorKernSetIndex.m  CVS version 1.1 SVN version 1
+matern32KernGradX.m  CVS version 1.2 SVN version 1
+sqexpKernDiagCompute.m  CVS version 1.4 SVN version 1
+kernDiagGradX.m  CVS version 1.6 SVN version 1
+gibbsperiodicKernDiagGradX.m  CVS version 1.1 SVN version 1
+matern52KernExpandParam.m  CVS version 1.1 SVN version 1
+biasKernExtractParam.m  CVS version 1.4 SVN version 1
+lfmGradientSigmaUpsilonVector.f  SVN version 87
+wienerKernDisplay.m  SVN version 265
+ggKernDiagCompute.m  SVN version 1
+rbfardKernGradient.m  CVS version 1.5 SVN version 1
+lfmGradientUpsilonMatrix.f  SVN version 87
+matern52KernDiagGradX.m  CVS version 1.1 SVN version 1
+rbfwhiteKernExpandParam.m  SVN version 274
+lfmwhiteXlfmwhiteKernCompute.m  SVN version 272
+ardKernDisplay.m  CVS version 1.4 SVN version 1
+lfmKernGradX.m  SVN version 1
+matern32KernDiagGradX.m  CVS version 1.1 SVN version 1
+lfmGradientUpsilonVector.f  SVN version 87
+mlpardKernDiagCompute.m  CVS version 1.4 SVN version 1
+rbfwhiteXwhiteKernGradient.m  SVN version 306
+lfmwhiteXrbfwhiteKernGradient.m  SVN version 306
+noneKernDiagCompute.m  SVN version 151
+rbfperiodicKernDisplay.m  CVS version 1.2 SVN version 1
+polyardKernExtractParam.m  CVS version 1.3 SVN version 1
+translateKernDisplay.m  CVS version 1.1 SVN version 1
+lfmXlfmKernGradient.m  SVN version 123
+sqexpKernGradX.m  CVS version 1.4 SVN version 1
+whiteKernDisplay.m  CVS version 1.6 SVN version 1
+kernExpandParam.m  CVS version 1.5 SVN version 1
+gibbsperiodicKernGradX.m  CVS version 1.1 SVN version 1
+lfmComputeTest.m  SVN version 1
+kernReadParamsFromFID.m  CVS version 1.4 SVN version 322
+ardKernGradient.m  CVS version 1.3 SVN version 20
+simwhiteXwhiteKernGradient.m  SVN version 306
+tensorKernGradient.m  CVS version 1.2 SVN version 1
+rbfKernDisplay.m  CVS version 1.8 SVN version 1
+matern52KernDisplay.m  CVS version 1.1 SVN version 1
+W.f  SVN version 285
+noneKernDiagGradX.m  SVN version 151
+ggwhiteXgaussianwhiteKernGradient.m  SVN version 285
+simComputeH.m  CVS version 1.4 SVN version 166
+ardKernDiagGradX.m  CVS version 1.4 SVN version 1
+rbfwhiteKernGradient.m  SVN version 274
+simwhiteKernGradX.m  SVN version 198
+matern52KernCompute.m  CVS version 1.1 SVN version 1
+ardKernDiagCompute.m  CVS version 1.3 SVN version 1
+whiteXnoneKernCompute.m  SVN version 285
+gibbsKernParamInit.m  CVS version 1.3 SVN version 1
+lfmKernDiagGradX.m  SVN version 1
+rbfardKernParamInit.m  CVS version 1.6 SVN version 1
+sqexpKernDiagGradient.m  CVS version 1.1 SVN version 1
+simwhiteKernDiagGradX.m  SVN version 198
+noneKernExtractParam.m  SVN version 151
+matern32KernExtractParam.m  CVS version 1.1 SVN version 1
+multiKernGradientBlockX.m  SVN version 269
+biasKernDiagCompute.m  CVS version 1.3 SVN version 1
+rbfperiodicKernDiagGradX.m  CVS version 1.1 SVN version 1
+rbfwhiteKernDiagCompute.m  SVN version 274
+ouKernParamInit.m  SVN version 195
+mlpKernExtractParam.m  CVS version 1.5 SVN version 1
+simKernCompute.m  CVS version 1.1 SVN version 1
+ggwhiteXggwhiteKernCompute.m  SVN version 285
+matern32KernCompute.m  CVS version 1.1 SVN version 1
+lfmGradientSigmaUpsilon.m  SVN version 44
+multiKernExtractParam.m  CVS version 1.1 SVN version 1
+ggKernExtractParam.m  SVN version 200
+wienerKernExtractParam.m  SVN version 265
+lfmwhiteComputeGradThetaH2.m  SVN version 290
+rbfperiodicKernCompute.m  CVS version 1.2 SVN version 1
+disimXrbfKernGradient.m  CVS version 1.1 SVN version 253
+gibbsKernExpandParam.m  CVS version 1.1 SVN version 1
+kernDiagGradient.m  CVS version 1.2 SVN version 1
+tensorKernParamInit.m  CVS version 1.4 SVN version 1
+polyardKernDiagGradX.m  CVS version 1.2 SVN version 1
+ratquadKernGradient.m  CVS version 1.2 SVN version 1
+rbfwhiteKernExtractParam.m  SVN version 274
+disimKernDisplay.m  CVS version 1.1 SVN version 163
+simKernDisplay.m  CVS version 1.1 SVN version 194
+whitefixedXwhitefixedKernGradient.m  SVN version 20
+mlpardKernDiagGradX.m  CVS version 1.5 SVN version 1
+ggXggKernGradient.m  SVN version 1
+gaussianKernDisplay.m  SVN version 13
+lfmGradientH.m  SVN version 100
+whitefixedKernDiagGradX.m  CVS version 1.4 SVN version 1
+whitefixedXwhitefixedKernCompute.m  SVN version 20
+ratquadKernGradX.m  CVS version 1.3 SVN version 1
+kernWriteToFID.m  SVN version 20
+gibbsKernGradX.m  CVS version 1.2 SVN version 1
+whiteKernExpandParam.m  CVS version 1.4 SVN version 1
+biasKernGradX.m  CVS version 1.5 SVN version 1
+mlpKernGradient.m  CVS version 1.5 SVN version 1
+fileKernGradX.m  CVS version 1.2 SVN version 1
+gaussianwhiteKernExtractParam.m  SVN version 285
+sqexpKernDiagGradX.m  CVS version 1.4 SVN version 1
+lfmwhiteKernExpandParam.m  SVN version 198
+lfmUpdateKernels.m  SVN version 20
+expKernDiagCompute.m  CVS version 1.1 SVN version 1
+rbfinfwhiteKernGradX.m  SVN version 307
+rbfinfwhiteKernExpandParam.m  SVN version 307
+linKernExtractParam.m  CVS version 1.5 SVN version 1
+rbfwhiteKernCompute.m  SVN version 274
+gaussianKernDiagCompute.m  SVN version 269
+multiKernParamInit.m  CVS version 1.2 SVN version 1
+tensorKernExtractParam.m  CVS version 1.3 SVN version 1
+linardKernExtractParam.m  CVS version 1.5 SVN version 1
+rbfXnoneKernGradient.m  SVN version 302
+gaussianKernGradient.m  SVN version 20
+rbfinfwhiteKernCompute.m  SVN version 307
+lfmCreate.m  SVN version 20
+lfmComputeUpsilon.m  SVN version 285
+biasKernExpandParam.m  CVS version 1.3 SVN version 1
+fileKernDiagCompute.m  CVS version 1.2 SVN version 1
+gibbsKernGradient.m  CVS version 1.2 SVN version 1
+ggKernDisplay.m  SVN version 13
+lfmTest.m  SVN version 20
+tensorKernDisplay.m  CVS version 1.3 SVN version 1
+whiteXwhiteKernCompute.m  CVS version 1.2 SVN version 1
+whitefixedKernGradient.m  CVS version 1.4 SVN version 151
+cmpndKernDiagGradient.m  CVS version 1.3 SVN version 1
+multiKernExpandParam.m  CVS version 1.1 SVN version 262
+rbfardKernDiagCompute.m  CVS version 1.4 SVN version 1
+fileKernDisplay.m  CVS version 1.3 SVN version 1
+simKernExpandParam.m  CVS version 1.1 SVN version 1
+multiKernGradX.m  CVS version 1.1 SVN version 269
+ouKernExtractParam.m  SVN version 195
+ardKernCompute.m  CVS version 1.4 SVN version 1
+biasKernGradient.m  CVS version 1.5 SVN version 1
+lfmwhiteKernParamInit.m  SVN version 198
+whiteKernCompute.m  CVS version 1.4 SVN version 151
+simKernGradX.m  CVS version 1.1 SVN version 1
+simwhiteXrbfwhiteKernCompute.m  SVN version 275
+noneKernGradient.m  SVN version 151
+lfmComputeUpsilonMatrix.f  SVN version 285
+polyKernDisplay.m  CVS version 1.4 SVN version 1
+lfmGradientSigmaUpsilonMatrix.f  SVN version 285
+gaussianwhiteKernParamInit.m  SVN version 285
+computeKernel.m  CVS version 1.2 SVN version 1
+lfmGradientH42.m  SVN version 285
+whiteKernGradient.m  CVS version 1.5 SVN version 1
+simKernDiagCompute.m  CVS version 1.1 SVN version 104
+mlpKernDiagGradX.m  CVS version 1.6 SVN version 1
+lfmKernCompute.m  SVN version 20
+gibbsperiodicKernGradient.m  CVS version 1.1 SVN version 1
+wienerKernGradient.m  SVN version 286
+sqexpKernParamInit.m  CVS version 1.6 SVN version 1
+rbfinfwhiteXrbfinfwhiteKernCompute.m  SVN version 307
+whitefixedKernDisplay.m  CVS version 1.5 SVN version 151
+whitefixedKernDiagGradient.m  CVS version 1.3 SVN version 1
+simXrbfKernGradient.m  CVS version 1.1 SVN version 316
+disimKernGradient.m  CVS version 1.1 SVN version 1
+polyKernGradient.m  CVS version 1.3 SVN version 1
+matern52KernExtractParam.m  CVS version 1.1 SVN version 1
+matern52KernGradX.m  CVS version 1.2 SVN version 1
+gaussianwhiteKernDiagGradX.m  SVN version 285
+translateKernGradX.m  CVS version 1.1 SVN version 1
+gaussianKernExpandParam.m  SVN version 1
+lfmLogLikeGradients.m  SVN version 20
+ouKernGradX.m  SVN version 195
+tensorKernExpandParam.m  CVS version 1.3 SVN version 1
+polyKernParamInit.m  CVS version 1.3 SVN version 1
+multiKernComputeBlock.m  CVS version 1.1 SVN version 165
+cmpndKernGradX.m  CVS version 1.4 SVN version 1
+lfmKernDisplay.m  SVN version 133
+lfmExpandParam.m  SVN version 20
+rbfwhiteKernParamInit.m  SVN version 274
+whiteKernGradX.m  CVS version 1.5 SVN version 200
+kernWriteParamsToFID.m  SVN version 20
+translateKernDiagGradX.m  CVS version 1.1 SVN version 1
+matern32KernExpandParam.m  CVS version 1.1 SVN version 1
+fileKernExtractParam.m  CVS version 1.3 SVN version 1
+matern52KernDiagGradient.m  CVS version 1.1 SVN version 1
+rbfwhiteXrbfwhiteKernGradient.m  SVN version 306
+tensorKernCompute.m  CVS version 1.3 SVN version 1
+kernSetWhite.m  CVS version 1.2 SVN version 1
+disimKernParamInit.m  CVS version 1.1 SVN version 163
+disimXdisimKernGradient.m  CVS version 1.1 SVN version 262
+linKernParamInit.m  CVS version 1.5 SVN version 265
+lfmKernExtractParam.m  SVN version 20
+tensorKernDiagCompute.m  CVS version 1.3 SVN version 1
+polyardKernCompute.m  CVS version 1.2 SVN version 1
+ggwhiteKernExtractParam.m  SVN version 285
+translateKernExtractParam.m  CVS version 1.1 SVN version 1
+mlpardKernGradient.m  CVS version 1.5 SVN version 1
+fileKernCompute.m  CVS version 1.2 SVN version 1
+lfmSample.m  SVN version 20
+rbfardKernExpandParam.m  CVS version 1.4 SVN version 1
+whiteKernParamInit.m  CVS version 1.5 SVN version 1
+rbfKernGradX.m  CVS version 1.8 SVN version 1
+gaussianKernDiagGradX.m  SVN version 1
+wienerKernGradX.m  SVN version 265
+mlpardKernGradX.m  CVS version 1.6 SVN version 1
+simwhiteXsimwhiteKernGradient.m  SVN version 285
+lfmwhiteKernCompute.m  SVN version 198
+cmpndKernCompute.m  CVS version 1.6 SVN version 1
+kernParamInit.m  CVS version 1.5 SVN version 1
+rbfperiodicKernExtractParam.m  CVS version 1.1 SVN version 1
+ratquadKernDiagGradient.m  CVS version 1.1 SVN version 1
+rbfKernGradient.m  CVS version 1.7 SVN version 1
+kernFactors.m  CVS version 1.2 SVN version 1
+lfmwhiteComputePsi.m  SVN version 300
+wienerKernExpandParam.m  SVN version 265
+ouKernDiagGradX.m  SVN version 195
+mlpKernDisplay.m  CVS version 1.6 SVN version 1
+simXsimKernGradient.m  CVS version 1.3 SVN version 262
+gibbsKernDiagCompute.m  CVS version 1.1 SVN version 1
+rbfKernExpandParam.m  CVS version 1.6 SVN version 1
+ardKernGradX.m  CVS version 1.4 SVN version 1
+pskernelObjective.m  CVS version 1.2 SVN version 1
+linardKernDiagGradX.m  CVS version 1.4 SVN version 1

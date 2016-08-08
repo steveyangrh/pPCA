@@ -1,4 +1,7 @@
-function [pc,W,data_mean,xr,evals,percentVar]=ppca(data,k)
+function [pc,W,data_mean]=ppca(data,k)
+%function [pc,W,data_mean,xr,evals,percentVar]=ppca(data,k)
+
+
 % PCA applicable to
 %   - extreme high-dimensional data (e.g., gene expression data) and
 %   - incomplete data (missing data)
@@ -49,18 +52,25 @@ function [pc,W,data_mean,xr,evals,percentVar]=ppca(data,k)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % calculate variance of PCs
 
-  for i=1:size(data,1)  % total variance, by using all available values
-   v(i)=var(data(i,~isnan(data(i,:))));
-  end
-  total_variance=sum(v(~isnan(v)));
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% this piece of code was originally implemented by the author
+% removed by Ronghao
 
-  evals=nan(1,k);
-  for i=1:k
-    data_recon = (pinv(W(i,:))*pc(i,:)); % without mean correction (does not change the variance)
-    evals(i)=sum(var(data_recon'));
-  end
+  %for i=1:size(data,1)  % total variance, by using all available values
+  % v(i)=var(data(i,~isnan(data(i,:))));
+  %end
+  %total_variance=sum(v(~isnan(v)));
 
-  percentVar=evals./total_variance*100;
+  %evals=nan(1,k);
+  %for i=1:k
+  %  data_recon = (pinv(W(i,:))*pc(i,:)); % without mean correction (does not change the variance)
+  %  evals(i)=sum(var(data_recon'));
+  %end
+
+  %percentVar=evals./total_variance*100;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 
 %    cumsumVarPC=nan(1,k);
 %   for i=1:k
@@ -101,9 +111,9 @@ function [C, ss, M, X,Ye] = ppca_mv(Ye,d,dia,plo);
 % [C,ss,M,X,Ye]=ppca_mv(data',k,0,0);
 
 %threshold = 1e-3;     % minimal relative change in objective funciton to continue
-threshold = 1e-5;
+threshold = 1e-5; % define the stop condition //ryang
 
-if plo; set(gcf,'Double','on'); end
+if plo; set(gcf,'Double','on'); end % ignore this //ryang
 
 [N,D] = size(Ye);
 
@@ -119,14 +129,16 @@ else
 end
 Ye = Ye - repmat(M,N,1); % subtract the mean from orginal values
 
-if missing;   Ye(hidden)=0;end % replace missing values by 0
+if missing;   Ye(hidden)=0;end % replace missing values by 0 //?? suspecious, can be replaced by rand? ryang
+% if missing;   Ye(hidden)=rand;end //written by ryang
 
 r     = randperm(N);
 C     = Ye(r(1:d),:)';     % =======     Initialization    ======
 C     = randn(size(C)); % initialize C (W' in our computation)
 CtC   = C'*C;
 X     = Ye * C * inv(CtC);
-recon = X*C'; recon(hidden) = 0;
+recon = X*C'; 
+recon(hidden) = 0;
 ss    = sum(sum((recon-Ye).^2)) / ( (N*D)-missing);
 
 count = 1;
@@ -137,10 +149,10 @@ while count          %  ============ EM iterations  ==========
 
     if plo; plot_it(Ye,C,ss,plo);    end % plot ignore here
 
-    Sx = inv( eye(d) + CtC/ss );    % ====== E-step, (co)variances   =====
+    Sx = inv( eye(d) + CtC/(ss+eps));    % ====== E-step, (co)variances   =====
     ss_old = ss;
     if missing; proj = X*C'; Ye(hidden) = proj(hidden); end
-    X = Ye*C*Sx/ss;          % ==== E step: expected values  ====
+    X = Ye*C*Sx/(ss+eps);          % ==== E step: expected values  ====
 
     SumXtX = X'*X;                              % ======= M-step =====
     C      = (Ye'*X)  / (SumXtX + N*Sx );

@@ -1,0 +1,12 @@
+function add_toolboxes()
+
+addpath('./gplvm/toolboxes/DATASETS0p135')
+addpath('./gplvm/toolboxes/IVM0p4')
+addpath('./gplvm/toolboxes/KERN0p221')
+addpath('./gplvm/toolboxes/MLTOOLS0p131')
+addpath('./gplvm/toolboxes/NDLUTIL0p16')
+addpath('./gplvm/toolboxes/NETLAB3_3')
+addpath('./gplvm/toolboxes/NOISE0p14')
+addpath('./gplvm/toolboxes/OPTIMI0p132')
+addpath('./gplvm/toolboxes/PRIOR0p22')
+addpath('./gplvm/GPLVM2p11')
