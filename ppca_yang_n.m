@@ -6,7 +6,7 @@
 
 % Created on August 2, 2016
 % Ronghao Yang
-function [W,u,sigma_square,R] = ppca_yang(R0,k)
+function [W,u,sigma_square,R] = ppca_yang_n(R0,k)
 
 	[n,m] = size(R0);
     R = R0;
@@ -24,7 +24,7 @@ function [W,u,sigma_square,R] = ppca_yang(R0,k)
     % sigma is standard deviation
     
 
-	minImprovement = 0.00000000001;
+	minImprovement = 0.00001;
 	rmse = 10^40;
 	prevErr = Inf;
   	% specify the stop condition
@@ -54,7 +54,7 @@ function [W,u,sigma_square,R] = ppca_yang(R0,k)
             C = C + (r-u)*(r-u)';
         end
         
-        C = C / m;
+        C = C / (m*n);
         
         u = nanmean(R,2);
         % update mean value
