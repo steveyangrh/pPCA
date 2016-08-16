@@ -6,7 +6,7 @@
 
 % Created on August 2, 2016
 % Ronghao Yang
-function [W,u,sigma_square,R] = ppca_yang_n_1(R0,k)
+function [W,u,sigma_square,R] = ppca_ryang_n_1(R0,k)
 
 	[n,m] = size(R0);
     R = R0;

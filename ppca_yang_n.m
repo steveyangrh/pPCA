@@ -61,7 +61,7 @@ function [W,u,sigma_square,R] = ppca_yang_n(R0,k)
         
         [U,D] = eigs(C,k);
         
-        sigma_square = (trace(C)-trace(D))/(n-k);
+        sigma_square = (trace(C)-trace(D))/(n-k+eps);
         % updating sigma_square
         
         S = D- sigma_square;
