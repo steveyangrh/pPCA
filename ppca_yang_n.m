@@ -43,9 +43,12 @@ function [W,u,sigma_square,R] = ppca_yang_n(R0,k)
             uh = u(rNan);
             SIG_OO = SIG (rNoNan,rNoNan);
             SIG_HO = SIG (rNan,rNoNan);
-            r(rNan) = uh + SIG_HO*SIG_OO^(-1)*(r0-u0);
+            r(rNan) = uh + SIG_HO*(SIG_OO^(-1))*(r0-u0);
             R(:,i) = r;
         end
+
+        u = nanmean(R,2);
+        % update mean value
         
         C = zeros(n,n);
 	  	% The minimization step (M)
@@ -55,9 +58,6 @@ function [W,u,sigma_square,R] = ppca_yang_n(R0,k)
         end
         
         C = C ./ (m*n);
-        
-        u = nanmean(R,2);
-        % update mean value
         
         [U,D] = eigs(C,k);
         

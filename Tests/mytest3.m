@@ -14,8 +14,8 @@ function [recoverMean,recoverStd] = mytest3(n,m,myrank)
             
             R0 = rand(n,myrank) * rand(myrank,m);
             R = nanGenerator(R0,j);
-            [~,~,~,~,~,S] = ppca(R,myrank); 
-            PM = matrixComparision(R0,S.Recon);
+            [W,u,sigma_square,Rpredict] = ppca_yang_n(R,10);
+            PM = matrixComparision(R0,Rpredict);
             recoverbank(i,(j/10)+1) = PM;
            
         end
