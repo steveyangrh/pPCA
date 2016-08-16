@@ -2,20 +2,20 @@ clear
 close all
 clc
 
-n = 10; m=10; myrank=10; nanPercentage=70; range = 0:10:90;
-[rmseMean1,rmseStd1] = mytest(n,m,myrank,nanPercentage);
+n = 10; m=10; myrank=10; nanPercentage=30; range = 0:10:90;
+[rmseMean1,rmseStd1] = mytest(n,m,myrank);
 n = 30;m=30;
-[rmseMean2,rmseStd2] = mytest(n,m,myrank,nanPercentage);
+[rmseMean2,rmseStd2] = mytest(n,m,myrank);
 n = 50;m=50;
-[rmseMean3,rmseStd3] = mytest(n,m,myrank,nanPercentage);
+[rmseMean3,rmseStd3] = mytest(n,m,myrank);
 n = 100;m=100;
-[rmseMean4,rmseStd4] = mytest(n,m,myrank,nanPercentage);
+[rmseMean4,rmseStd4] = mytest(n,m,myrank);
 n = 200;m=200;
-[rmseMean5,rmseStd5] = mytest(n,m,myrank,nanPercentage);
+[rmseMean5,rmseStd5] = mytest(n,m,myrank);
 
 
 subplot(1,1,1);
-title('rnd | rank 10 | missing values in training data 70%| pPCA trials 10 | riedlpPCA | \epsilon 10%'); % | \epsilon 10%
+title('rnd | rank 10| pPCA trials 10 | Matlab pPCA | \epsilon 10%'); % | \epsilon 10%
 xlabel('missing values in new R %');
 ylabel('Values Misrecovered %');
 hold on;

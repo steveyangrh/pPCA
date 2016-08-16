@@ -1,4 +1,4 @@
-function [pc,W,data_mean]=ppca(data,k)
+function [pc,W,data_mean]=ppca_am(data,k)
 %function [pc,W,data_mean,xr,evals,percentVar]=ppca(data,k)
 
 

@@ -29,7 +29,7 @@ function [W,u,sigma_square,R] = ppca_yang_n(R0,k)
 	prevErr = Inf;
   	% specify the stop condition
 
-	while(rmse < (1-minImprovement)*prevErr)
+	for i = 1:100
   	% the iterative step for minimizing the error
 
 	  	% Expectation step (E)
@@ -54,24 +54,20 @@ function [W,u,sigma_square,R] = ppca_yang_n(R0,k)
             C = C + (r-u)*(r-u)';
         end
         
-        C = C / (m*n);
+        C = C ./ (m*n);
         
         u = nanmean(R,2);
         % update mean value
         
         [U,D] = eigs(C,k);
         
-        sigma_square = (trace(C)-trace(D))/(n-k+eps);
+        sigma_square = (trace(C)-trace(D))/(n-k)+eps;
         % updating sigma_square
         
         S = D- sigma_square;
         
         W = U*S;
         % updating W
-
-	    % Compute the error
-	    prevErr = rmse;
-	    rmse = computeRMSE(R0,R);
 
 	end
 
